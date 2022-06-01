@@ -9,7 +9,7 @@ const NavigationLinks = [
   },
   {
     label: 'Wish List',
-    link: '#',
+    link: '/wish',
   },
 ]
 
