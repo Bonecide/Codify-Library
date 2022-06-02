@@ -25,7 +25,7 @@ export default function MainWishList() {
         <div>
               <h3 className='search_books_length'>{books.length !== 0 ? `Число книг : ${books.length} ` : 'Ваш список желания Пуст!'}</h3>
               <input placeholder='Поиск...' type="text" onChange={(e)=> setValue(e.target.value)} />
-            <div className='books_container'>
+            <div style={{marginTop : '50px'}} className='books_container'>
             {filtredBooks.map((book,idx) => (
                 <WishListCard genres={book.genres} img={book.img} id={idx} author={book.author} name={book.name} key={`wishCard#${idx}`}/>
             ))}
