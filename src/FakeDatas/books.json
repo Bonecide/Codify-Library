@@ -3,18 +3,18 @@
         "name" : "Алиса в Стране Чудес",
         "Author" : "Льюис Кэрролл",
         "genres" : "Сказка, Фантастика",
-        "img" : "https://alifba.ru/storage/img/products/250/cover1.jpg"
+        "img" : ""
     },
     {
         "name" : "Война и Мир",
         "Author" : "Лев Толстой",
         "genres" : "Роман, Роман-Эпопея",
-        "img" : "https://top10a.ru/wp-content/uploads/2016/01/«Война-и-мир»-Л.-Н.-Толстой.jpg"
+        "img" : ""
     },
     {
         "name" : "Атака Титанов",
         "Author" : "Хадзиме Исаяма",
         "genres" : "Боевик, Драма, Трагедия",
-        "img" : "https://takapulta.ru/wp-content/uploads/2021/07/ataka-na-titanov-kniga-12.jpg"
+        "img" : ""
     }
 ]

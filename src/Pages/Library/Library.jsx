@@ -1,10 +1,11 @@
-import SearchBooks from "../../Components/Library/SearchBook";
+
+import AllLibrary from '../../Components/Library/SearchBook';
 
 export default function Library() {
   
     return(
-        <div>
-            <SearchBooks/>
+        <div className="container">
+            <AllLibrary/>
         </div>
     )
 }

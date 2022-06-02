@@ -8,27 +8,28 @@ export const BookSlice = createSlice({
     name: 'book',
     initialState,
     reducers : {
-        AddBook : (state) => {
-            const name = prompt('Введите название книги *');
-            const Author = prompt('Введите автора книги *');
-            const genres = prompt('Введите жанры книги');
-            if(name && Author) {
-                state.push({
-                    name ,
-                    Author,
-                    genres
-                })
-                localStorage.setItem('books' , JSON.stringify(state))
-            }
-            else alert ('Название книги и Указание автора Обязательно ')
+        AddBook : (state ,action) => {
+            state.push( action.payload)
+            localStorage.setItem('books' , JSON.stringify(state))
             
         },
         Bookdelete: (state ,action) => {
             state.splice (action.payload , 1)
             localStorage.setItem('books' , JSON.stringify(state))
         },
+        RedactBook : (state,action) => {
+            const name = prompt('Введите Новое Название книги :')
+            const Author = prompt('Введите Нового Автора книги :')
+            const genres = prompt('Введите Новые жанры книги :')
+                if (name){
+                state[action.payload].name = name};
+                if (Author){
+                    state[action.payload].Author = Author};
+                if (genres){
+                        state[action.payload].genres = genres}
+        }
     }
 });
-export const { AddBook, Bookdelete } = BookSlice.actions
+export const { AddBook, Bookdelete , RedactBook } = BookSlice.actions
 
 export default BookSlice.reducer

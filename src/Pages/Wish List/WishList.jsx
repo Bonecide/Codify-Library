@@ -1,8 +1,11 @@
 export default function WishList() {
 
     return(
-        <div>
-            <h1>WISH</h1>
+        <div className="WishList">
+            <h2>Список Желаемого</h2>
+            <div>
+                
+            </div>
         </div>
     )
 }

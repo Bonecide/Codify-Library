@@ -1,0 +1,38 @@
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 2;
+    cursor: pointer;
+    .modalContent{
+        text-align: center;
+        padding: 20px;
+        padding-top: 10px;
+        border-radius: 12px;
+        width: 400px;
+        min-height: 220px;
+        transition: 0.4s all;
+        background: white;
+        position: relative;
+        cursor: auto;
+    }
+    .close_icon {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
+.h2{
+    font-size: 30px;
+}
+

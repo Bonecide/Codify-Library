@@ -19,6 +19,9 @@
     &:hover  .booksCard_icons{
         opacity: 1;
     }
+    &:hover .heart_icon_active {
+        opacity: 1;
+    }
     .heart_icon {
         position: absolute;
         right: 5%;
@@ -31,6 +34,17 @@
 
         &:hover {
             color: yellow;
+        }
+        &_active {
+            position: absolute;
+            right: 5%;
+            top: 10px;
+            color: yellow;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            opacity: 0;
+            
         }
     }
     &_icons {
@@ -64,4 +78,8 @@
             }
         }
     }
+    
+}
+.ALERT {
+    cursor: pointer;
 }

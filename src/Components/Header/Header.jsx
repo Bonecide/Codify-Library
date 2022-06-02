@@ -37,7 +37,7 @@ export default function Header() {
   const getActiveStyles = (label) => (label === active ? 'active' : 'header__info');
 
   return (
-    <div className="header__container">
+    <header className="header__container">
       <div className="header__info__container">
         {NavigationLinks.map(({ label, link }) => (
           <Link
@@ -51,6 +51,6 @@ export default function Header() {
         ))}
       </div>
 
-    </div>
+    </header>
   );
 }

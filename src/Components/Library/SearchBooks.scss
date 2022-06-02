@@ -6,3 +6,38 @@
 .search_books_length {
     text-align: center;
 }
+.Add_Button {
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background: #2196F3;
+        color: white;
+    }
+}
+.search_books_Button_Container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 200px;
+    height: 300px;
+}
+.addBooks_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+.search_books_filtres {
+    display: flex;
+    justify-content: space-between;
+    &_filtres {
+        display: flex;
+        gap: 10px;
+    }
+}
