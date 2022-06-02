@@ -64,6 +64,7 @@ export default function SearchBooks() {
                             <option value="драма">Драма</option>
                             <option value="роман">Роман</option>
                             <option value="комедия">Комедия</option>
+                            <option value="Детектив">Детектив</option>
 
                         </select>
                         <select onChange={handleChangeAuthor} value={authorSelect}  id="">

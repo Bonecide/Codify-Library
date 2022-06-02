@@ -1,11 +1,10 @@
-export default function WishList() {
+import MainWishList from "../../Components/WIshList/MainWIshList";
 
+export default function WishList() {
+    
     return(
-        <div className="WishList">
-            <h2>Список Желаемого</h2>
-            <div>
-                
-            </div>
+        <div className="container">
+            <MainWishList/>
         </div>
     )
 }
